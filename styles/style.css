@@ -61,12 +61,12 @@ body{
 .containerButton {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.31rem;
 }
 
 .warning {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .warning p {
@@ -79,9 +79,9 @@ body{
 }
 
 .buttons button {
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
+    width: 20.5rem;
+    height: 4.18rem;
+    border-radius: 1.5rem;
     outline: none;
     font: 400 1rem "Poppins", sans-serif;
     cursor: pointer;
@@ -128,7 +128,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
+    border-radius: 7rem;
     background-size: 200% 100%;
     background-image: linear-gradient(to left, #0d1d49 50%, #fff 50%);
     transition: background-position 500ms;
@@ -165,11 +165,23 @@ path:hover {
     border-radius: 2rem;
     height: 90vh;
     width: 28%;
+    padding: 1.5rem;
     display: flex;
     margin-right: 2%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.containerInicial {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .containerImg {
@@ -187,6 +199,8 @@ path:hover {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .textContainer h1 {
@@ -195,4 +209,52 @@ path:hover {
 
 .textContainer p {
     font: 400 1rem "Poppins", sans-serif;
+}
+
+.containerResposta {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pcontainer {
+    width: 100%;
+    height: 88%;
+    font: 400 1rem "Poppins", sans-serif;
+    justify-content: space-between;
+    word-break: break-word;
+    overflow: scroll;
+}
+
+.buttonContainer {
+    background: #fff;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copiar {
+    background-color: #fff;
+    width: 90%;
+    height: 100%;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font: 400 1rem "Poppins", sans-serif;
+}
+
+.copiar:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+.ocultar {
+    display: none;
 }

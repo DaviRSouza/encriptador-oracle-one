@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="assets/AluraIcon.ico" type="image/x-icon">
   <title>Decodificador - Oracle ONE</title>
 </head>
 <body>
@@ -26,8 +27,8 @@
           <p>Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class="buttons">
-          <button class="cript">Criptografar</button>
-          <button class="descript">Descriptografar</button>
+          <button id="cript" class="cript">Criptografar</button>
+          <button id="descript" class="descript">Descriptografar</button>
         </div>
       </div>
     </section>
@@ -46,12 +47,23 @@
   </footer>
   </main>
   <aside class="result">
-    <div class="containerImg">
-      <img src="assets/image.svg" alt="Imagem de uma pessoa analisando um diamante com uma lupa"/>
+    <div id="containerResposta" class="ocultar">
+      <div class="pcontainer">
+        <p id="resposta"></p>
+      </div>
+      <div class="buttonContainer">
+        <button id="copiar" class="copiar">Copiar</button>
+      </div>
     </div>
-    <div class="textContainer">
-      <h1>Nenhuma Mensagem Encontrada</h1>
-      <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+    <div id="containerInicial" class="containerInicial">
+      <div class="containerImg">
+        <img id="image" src="assets/image.svg" alt="Imagem de uma pessoa analisando um diamante com uma lupa"/>
+      </div>
+      <div class="textContainer">
+        <h1>Nenhuma Mensagem Encontrada</h1>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
     </div>
   </aside>
   <script src="scripts/script.js"></script>
